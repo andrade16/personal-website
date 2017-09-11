@@ -1,0 +1,146 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition: all .2s ease-in;
+}
+body {
+	text-align: center;
+	font-family: "Muli", sans-serif;
+	text-rendering: optimizeLegibility;
+	font-size: 20px;
+	color: #222;
+}
+
+#section-one {
+    background-image: url('./img/colorado-1.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	background-attachment: fixed;
+	height: 100vh;
+	position: relative;
+}
+#two-column {
+	max-width:60em;
+	margin:auto;
+	padding-top: 3em;
+	color: #fff;
+}
+#two-column p {
+	position:initial;
+	transform: translate(0, 0);
+}
+#intro {
+	font-size: 5em;
+	float: left;
+	width: 50%;
+	text-align: left;
+	padding-left: .2em;
+}
+#intro-statement {
+	padding-left: 2em;
+	line-height: 2em;
+	text-align: left;
+	font-size: 20px;
+	float: left;
+	width: 50%;
+}
+.clearfix:after, section:after {
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear:both;
+	content: "";
+}
+#skills-experience a, #headcontact a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+}
+#skills-experience a:hover, #headcontact a:hover {
+	border-bottom: 1px solid black;
+}
+#skills-experience a:visited, #headcontact a:visited {
+	color: black;
+}
+nav {
+	clear: both;
+	float: left;
+	margin-top: 2em;
+}
+nav a {
+	text-align: center;
+	color: inherit;
+	border: 2px solid;
+	padding: 1em 2em;
+	display: inline-block;
+	border-radius: 100px;
+	text-decoration: none;
+}
+nav a + a {
+	margin-left: 1em;
+}
+nav a:link {
+	border: 2px solid;
+	padding: 1em 2em;
+	display: inline-block;
+	border-radius: 100px;
+	text-decoration: none;
+}
+nav a:hover {
+	background: rgba(0,0,0,0.5);
+	transform: scale(1.1, 1.1);
+}
+h1 {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	background: #222;
+	color: #fff;
+}
+section > div {
+	width: 100%;
+	overflow: hidden;
+	height: 30em;
+}
+section div div {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+section p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+section div:nth-of-type(even) div {
+    float: right;
+}
+
+.about-pic-one {
+	background-image: url('./img/me_random_3.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+.about-pic-two {
+	background-image: url('./img/rotunda_2.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+.skills-pic-one {
+	background-image: url('./img/me_colorado_2.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:right;
+}
+.skills-pic-two {
+	background-image: url('./img/rocky_1.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
