@@ -6,12 +6,15 @@
 }
 body {
 	text-align: center;
-	font-family: "Muli", sans-serif;
+    font-family: Carme, sans-serif;
+    font-weight: lighter;
 	text-rendering: optimizeLegibility;
 	font-size: 20px;
 	color: #222;
 }
-
+p {
+	text-align: center;
+}
 #section-one {
     background-image: url('./img/colorado-1.jpg');
 	background-size: cover;
@@ -77,10 +80,9 @@ nav a {
 	display: inline-block;
 	border-radius: 100px;
 	text-decoration: none;
+    margin-left: 1em;
 }
-nav a + a {
-	margin-left: 1em;
-}
+
 nav a:link {
 	border: 2px solid;
 	padding: 1em 2em;
@@ -150,7 +152,4 @@ section div:nth-of-type(even) div {
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position: center top;
-}
-p {
-	text-align: center;
 }
