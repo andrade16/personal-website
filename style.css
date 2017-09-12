@@ -53,15 +53,15 @@ body {
 	clear:both;
 	content: "";
 }
-#skills-experience a, #headcontact a {
+#skills-experience a, #contact a {
 	text-decoration: none;
 	color: inherit;
 	font-weight: bold;
 }
-#skills-experience a:hover, #headcontact a:hover {
+#skills-experience a:hover, #contact a:hover {
 	border-bottom: 1px solid black;
 }
-#skills-experience a:visited, #headcontact a:visited {
+#skills-experience a:visited, #contact a:visited {
 	color: black;
 }
 nav {
@@ -143,4 +143,14 @@ section div:nth-of-type(even) div {
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
+}
+
+.contact-img {
+	background:url('./img/me_random_2.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center top;
+}
+p {
+	text-align: center;
 }
