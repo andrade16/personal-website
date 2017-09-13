@@ -3,10 +3,63 @@
 <head>
     <title>William Andrade</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Carme" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Carme"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--leaflet css-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+          integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+          crossorigin=""/>
+
+    <!-- Need to put leaflet javascript AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+            integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+            crossorigin="">
+    </script>
+    <!--Leaflet.Sleep.js pacakge source: https://github.com/CliffCloud/Leaflet.Sleep-->
+    <script src="../Leaflet.Sleep.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var mymap = L.map('leaflet-map', {
+                sleep: true,
+                sleepTime: 750,
+                wakeTime: 750,
+                sleepNote: true,
+                sleepNoteStyle: {color: 'black'},
+                hoverToWake: true,
+                sleepOpacity: .7
+            }).setView([38.8951, -77.0364], 10);
+
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                maxZoom: 13,
+                minZoom: 2,
+                doubleClickZoom: true,
+                dragging: true,
+                id: 'mapbox.streets',
+                accessToken: 'pk.eyJ1Ijoid2lsbGlhbWFuZHJhZGUiLCJhIjoiY2o2OG9xMHIyMGpyeTM3bnlndmt5dDU1dSJ9.7sggpTuzSDmC61AZ2QoLnQ'
+            }).addTo(mymap);
+        };
+    </script>
+
+    <script>
+    $(document).ready(function () {
+        $("a").on('click', function (event) {
+            console.log(this.hash);
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 850, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
 
 
 </head>
@@ -17,7 +70,7 @@
         <section id="two-column" class="clearfix">
             <p id="intro">Hi, i'm William.</p>
             <p id="intro-statement">
-                Software Engineer & Dog dad
+                25 years old. DC Native. Software Engineer. Dog dad.
             </p>
 
             <nav id="nav-bar">
@@ -40,7 +93,6 @@
                     cam maiorum qualisque sea. Porro nemore eos eu, labores deserunt aliquando ad sea
                     , viris everti nusquam ne vim.
                     Eros sanctus expetenda pri eu, ius ancillae invidunt id, malis patrioque intellegat ut nam.
-
                 </p>
             </div>
         </div>
@@ -71,7 +123,6 @@
                     cam maiorum qualisque sea. Porro nemore eos eu, labores deserunt aliquando ad sea
                     , viris everti nusquam ne vim.
                     Eros sanctus expetenda pri eu, ius ancillae invidunt id, malis patrioque intellegat ut nam.
-
                 </p>
             </div>
         </div>
@@ -90,6 +141,10 @@
         </div>
     </section>
 
+    <div id="leaflet-map-container">
+        <div id="leaflet-map"></div>
+    </div>
+
     <section id="contact">
         <h1>contact</h1>
         <div>
@@ -103,25 +158,7 @@
             </div>
         </div>
     </section>
-
 </div>
 </body>
-
-<script>
-		$(document).ready(function() {
-			$("a").on('click', function(event) {
-                console.log(this.hash);
-				if (this.hash !== "") {
-					event.preventDefault();
-					var hash = this.hash;
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 850 , function() {
-						window.location.hash = hash;
-					});
-				}
-			});
-		});
-	</script>
 
 </html>

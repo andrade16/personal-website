@@ -1,0 +1,25 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "A personalized static website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/william.andrade/personal-website.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "leaflet"
+  ],
+  "author": "William Andrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/william.andrade/personal-website/issues"
+  },
+  "homepage": "https://gitlab.com/william.andrade/personal-website#README",
+  "dependencies": {}
+}

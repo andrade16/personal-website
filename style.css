@@ -67,6 +67,18 @@ p {
 #skills-experience a:visited, #contact a:visited {
 	color: black;
 }
+
+#leaflet-map-container {
+    background-color: #222;
+}
+#leaflet-map {
+    vertical-align: top;
+	width: 100%;
+	height: 500px;
+	display: inline-block;
+	margin: 0px;
+}
+
 nav {
 	clear: both;
 	float: left;
