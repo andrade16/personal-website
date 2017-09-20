@@ -18,7 +18,7 @@
             integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
             crossorigin="">
     </script>
-    <!--Leaflet.Sleep.js pacakge source: https://github.com/CliffCloud/Leaflet.Sleep-->
+    <!--Leaflet.Sleep.js package source: https://github.com/CliffCloud/Leaflet.Sleep-->
     <script src="../Leaflet.Sleep.js"></script>
     <script type="text/javascript">
         window.onload = function () {
@@ -41,6 +41,24 @@
                 id: 'mapbox.streets',
                 accessToken: 'pk.eyJ1Ijoid2lsbGlhbWFuZHJhZGUiLCJhIjoiY2o2OG9xMHIyMGpyeTM3bnlndmt5dDU1dSJ9.7sggpTuzSDmC61AZ2QoLnQ'
             }).addTo(mymap);
+
+            L.marker([38.8951, -77.0364]).addTo(mymap).bindPopup("Washington, D.C., USA");
+            L.marker([38.029306, -78.476678]).addTo(mymap).bindPopup("Charlottesville, VA, USA");
+            L.marker([40.7891, -73.1350]).addTo(mymap).bindPopup("Long Island, NY, USA");
+            L.marker([30.267153, -97.7430608]).addTo(mymap).bindPopup("Austin, TX, USA");
+            L.marker([39.739236, -104.990251]).addTo(mymap).bindPopup("Denver, CO, USA");
+            L.marker([33.748995, -84.387982]).addTo(mymap).bindPopup("Atlanta, GA, USA");
+            L.marker([25.761680, -80.191790]).addTo(mymap).bindPopup("Miami, FL, USA");
+            L.marker([47.586571, -122.332071]).addTo(mymap).bindPopup("Seattle, WA, USA");
+
+
+            L.marker([-17.413977, -66.165321]).addTo(mymap).bindPopup("Cochabamba, Bolivia");
+            L.marker([-16.489689, -68.119293]).addTo(mymap).bindPopup("La Paz, Pedro Domingo Murillo, Bolivia");
+            L.marker([18.582010, -68.405473]).addTo(mymap).bindPopup("Punta Cana, Dominican Republic");
+
+
+
+
         };
     </script>
 

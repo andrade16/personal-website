@@ -1,167 +1,188 @@
 * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     transition: all .2s ease-in;
 }
+
 body {
-	text-align: center;
+    text-align: center;
     font-family: Carme, sans-serif;
     font-weight: lighter;
-	text-rendering: optimizeLegibility;
-	font-size: 20px;
-	color: #222;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    color: #222;
 }
+
 p {
-	text-align: center;
+    text-align: center;
 }
+
 #section-one {
     background-image: url('./img/colorado-1.jpg');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	background-attachment: fixed;
-	height: 100vh;
-	position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
 }
+
 #two-column {
-	max-width:60em;
-	margin:auto;
-	padding-top: 3em;
-	color: #fff;
+    max-width: 60em;
+    margin: auto;
+    padding-top: 3em;
+    color: #fff;
 }
+
 #two-column p {
-	position:initial;
-	transform: translate(0, 0);
+    position: initial;
+    transform: translate(0, 0);
 }
+
 #intro {
-	font-size: 5em;
-	float: left;
-	width: 50%;
-	text-align: left;
-	padding-left: .2em;
+    font-size: 5em;
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding-left: .2em;
 }
+
 #intro-statement {
-	padding-left: 2em;
-	line-height: 2em;
-	text-align: left;
-	font-size: 20px;
-	float: left;
-	width: 50%;
+    padding-left: 2em;
+    line-height: 2em;
+    text-align: left;
+    font-size: 20px;
+    float: left;
+    width: 50%;
 }
+
 .clearfix:after, section:after {
-	height: 0;
-	visibility: hidden;
-	display: block;
-	clear:both;
-	content: "";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    content: "";
 }
+
 #skills-experience a, #contact a {
-	text-decoration: none;
-	color: inherit;
-	font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
 }
+
 #skills-experience a:hover, #contact a:hover {
-	border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
 }
+
 #skills-experience a:visited, #contact a:visited {
-	color: black;
+    color: black;
 }
 
 #leaflet-map-container {
     background-color: #222;
 }
+
 #leaflet-map {
     vertical-align: top;
-	width: 100%;
-	height: 500px;
-	display: inline-block;
-	margin: 0px;
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+    margin: 0px;
 }
 
 nav {
-	clear: both;
-	float: left;
-	margin-top: 2em;
+    clear: both;
+    float: left;
+    margin-top: 2em;
 }
+
 nav a {
-	text-align: center;
-	color: inherit;
-	border: 2px solid;
-	padding: 1em 2em;
-	display: inline-block;
-	border-radius: 100px;
-	text-decoration: none;
+    text-align: center;
+    color: inherit;
+    border: 2px solid;
+    padding: 1em 2em;
+    display: inline-block;
+    border-radius: 100px;
+    text-decoration: none;
     margin-left: 1em;
 }
 
 nav a:link {
-	border: 2px solid;
-	padding: 1em 2em;
-	display: inline-block;
-	border-radius: 100px;
-	text-decoration: none;
+    border: 2px solid;
+    padding: 1em 2em;
+    display: inline-block;
+    border-radius: 100px;
+    text-decoration: none;
 }
+
 nav a:hover {
-	background: rgba(0,0,0,0.5);
-	transform: scale(1.1, 1.1);
+    background: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1, 1.1);
 }
+
 h1 {
-	padding-top: 4%;
-	padding-bottom: 4%;
-	background: #222;
-	color: #fff;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background: #222;
+    color: #fff;
 }
+
 section > div {
-	width: 100%;
-	overflow: hidden;
-	height: 30em;
+    width: 100%;
+    overflow: hidden;
+    height: 30em;
 }
+
 section div div {
-	position: relative;
-	float: left;
-	width: 50%;
-	height: 100%;
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
 }
+
 section p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 section div:nth-of-type(even) div {
     float: right;
 }
 
 .about-pic-one {
-	background-image: url('./img/me_random_3.jpg');
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position: center;
+    background-image: url('./img/me_random_3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 .about-pic-two {
-	background-image: url('./img/me_rocky_1.JPG');
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:right;
+    background-image: url('./img/me_rocky_1.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .skills-pic-one {
-	background-image: url('./img/me_colorado_2.jpg');
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:right;
+    background-image: url('./img/me_colorado_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
 .skills-pic-two {
-	background-image: url('./img/rocky_1.jpg');
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position:center;
+    background-image: url('./img/rocky_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .contact-img {
-	background:url('./img/me_random_2.jpg');
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-position: center top;
+    background: url('./img/me_artech_house.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
