@@ -176,14 +176,14 @@ section div:nth-of-type(even) div {
 }
 
 .skills-pic-two {
-    background-image: url('./img/IMG_0195.JPG');
+    background-image: url('./img/me_colorado_7.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .contact-img {
-    background: url('./img/rocky_1.jpg');
+    background: url('./img/rocky_smiling.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
