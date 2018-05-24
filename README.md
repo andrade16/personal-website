@@ -1,7 +1,7 @@
 My own personal website
 ---
  
-Welcome. This project is just meant to be a simple static web page that displays some information about myself. With that being said, there is no set up needed!
+Welcome. This project is just meant to be a simple static web page that displays some information about myself. With that being said, there is no set up needed! You can view the live website [here](https://william-personal-website.herokuapp.com/src/index.html).
 
 
 Info 
